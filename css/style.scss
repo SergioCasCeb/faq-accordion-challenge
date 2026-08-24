@@ -79,14 +79,17 @@ main {
                 font-weight: var(--fw-semibold);
                 line-height: var(--lh-tight);
                 color: var(--clr-primary-950);
+                outline: 2px solid transparent;
+                outline-offset: 4px;
+                border-radius: var(--radius-sm);
                 list-style: none;
-                outline: none;
-                transition: color 150ms ease-in-out;
+                transition: color 150ms ease-in-out, outline-color 150ms ease-in-out;
                 cursor: pointer;
 
                 &:hover,
                 &:focus-visible {
                     color: var(--clr-primary-accent);
+                    outline-color: var(--clr-primary-accent);
                 }
 
                 &::after {
