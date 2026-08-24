@@ -32,11 +32,11 @@ main {
 
 .card {
     width: 100%;
-    max-width: 38rem;
+    max-width: 39rem;
     display: flex;
     flex-direction: column;
     gap: var(--space-0);
-    padding: var(--space-6) var(--space-8);
+    padding: var(--space-6) var(--space-10);
     background-color: var(--clr-neutral-0);
     border-radius: var(--radius-lg);
     box-shadow: 0 0.5rem 1rem 0.5rem hsla(290, 25%, 58%, 0.1);
@@ -135,7 +135,7 @@ main {
 
 @media screen and (min-width: 48rem) {
     .card {
-        padding: var(--space-8) var(--space-10);
+        padding: var(--space-8) var(--space-12);
 
         &__header {
 
