@@ -1,0 +1,244 @@
+/**
+ * CSS reset.
+ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+}
+
+html {
+    hanging-punctuation: first last;
+    color-scheme: light dark;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+    text-wrap: pretty;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+    }
+}
+
+/* 
+  * Global styles
+  */
+
+:root {
+    /***********************/
+    /******Primitives******/
+    /***********************/
+
+    /**Colors**/
+    /* Primary Purple Scale */
+    --clr-primary-50: hsl(275, 100%, 99%);
+    --clr-primary-100: hsl(275, 100%, 97%);
+    --clr-primary-200: hsl(280, 80%, 92%);
+    --clr-primary-300: hsl(284, 60%, 84%);
+    --clr-primary-400: hsl(288, 40%, 70%);
+    --clr-primary-500: hsl(290, 25%, 58%);
+    --clr-primary-600: hsl(292, 16%, 49%);
+    --clr-primary-700: hsl(292, 22%, 36%);
+    --clr-primary-800: hsl(292, 30%, 25%);
+    --clr-primary-900: hsl(292, 36%, 18%);
+    --clr-primary-950: hsl(292, 42%, 14%);
+
+    /* Neutral Scale */
+    --clr-neutral-0: hsl(0, 100%, 100%);
+    --clr-neutral-50: hsl(0, 0%, 98%);
+    --clr-neutral-100: hsl(0, 0%, 96%);
+    --clr-neutral-200: hsl(0, 0%, 90%);
+    --clr-neutral-300: hsl(0, 0%, 82%);
+    --clr-neutral-400: hsl(0, 0%, 64%);
+    --clr-neutral-500: hsl(0, 0%, 48%);
+    --clr-neutral-600: hsl(0, 0%, 36%);
+    --clr-neutral-700: hsl(0, 0%, 24%);
+    --clr-neutral-800: hsl(0, 0%, 16%);
+    --clr-neutral-900: hsl(0, 0%, 10%);
+
+    --clr-primary-accent: #AA1FEA;
+
+    /**Typography**/
+
+    /* Font Family */
+    --ff-base: "Work Sans", sans-serif;
+
+    /* Font Weights */
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Font Sizes */
+    --fs-xs: 0.813rem;
+    /* 13px */
+    --fs-sm: 0.875rem;
+    /* 14px */
+    --fs-md: 1rem;
+    /* 16px */
+    --fs-lg: 1.125rem;
+    /* 18px */
+    --fs-xl: 1.25rem;
+    /* 20px */
+    --fs-2xl: 1.5rem;
+    /* 24px */
+    --fs-3xl: 2rem;
+    /* 32px */
+    --fs-4xl: 2.5rem;
+    /* 40px */
+
+    /* Line Heights */
+    --lh-tight: 1.2;
+    --lh-normal: 1.5;
+    --lh-relaxed: 1.75;
+
+    /* Letter Spacing */
+    --ls-tight: -0.02em;
+    --ls-normal: 0;
+    --ls-wide: 0.02em;
+
+    /**Spacing**/
+    --space-0: 0;
+    --space-px: 1px;
+    --space-0-5: 0.125rem;
+    /* 2px */
+    --space-1: 0.25rem;
+    /* 4px */
+    --space-2: 0.5rem;
+    /* 8px */
+    --space-3: 0.75rem;
+    /* 12px */
+    --space-4: 1rem;
+    /* 16px */
+    --space-5: 1.25rem;
+    /* 20px */
+    --space-6: 1.5rem;
+    /* 24px */
+    --space-8: 2rem;
+    /* 32px */
+    --space-10: 2.5rem;
+    /* 40px */
+    --space-12: 3rem;
+    /* 48px */
+    --space-16: 4rem;
+    /* 64px */
+    --space-20: 5rem;
+    /* 80px */
+
+    /** Border Radius **/
+    --radius-none: 0;
+    --radius-sm: 0.25rem;
+    /* 4px */
+    --radius-md: 0.5rem;
+    /* 8px */
+    --radius-lg: 0.75rem;
+    /* 12px */
+    --radius-xl: 1rem;
+    /* 16px */
+    --radius-full: 9999px;
+
+    /** Borders **/
+    --border-sm: 1px;
+    --border-md: 2px;
+    --border-lg: 4px;
+
+    /** Breakpoints **/
+    --content-xs: 20rem;
+    /* 320px */
+    --content-sm: 30rem;
+    /* 480px */
+    --content-md: 48rem;
+    /* 768px */
+    --content-lg: 72rem;
+    /* 1152px */
+    --content-xl: 90rem;
+    /* 1440px */
+}
+
+body {
+    background-color: var(--clr-primary-100);
+    font-family: var(--ff-base);
+    font-size: var(--fs-md);
+    color: var(--clr-primary-950);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: var(--lh-normal);
+}
+
+footer {
+    font-size: var(--fs-xs);
+    color: var(--clr-primary-950);
+    text-align: center;
+
+    a {
+        color: var(--clr-primary-accent);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+@supports (interpolate-size: allow-keywords) {
+    details {
+        interpolate-size: allow-keywords;
+
+        &::details-content {
+            transition:
+                block-size 250ms ease-in-out,
+                content-visibility 250ms allow-discrete;
+            overflow: hidden;
+            block-size: 0;
+        }
+
+        &[open]::details-content {
+            block-size: auto;
+        }
+    }
+}
