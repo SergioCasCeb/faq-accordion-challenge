@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution]()
-- Live Site URL: [Netlify]()
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/faq-accordion-challenge-hsKgW6fG8q)
+- Live Site URL: [Netlify](https://fm-faq-accordion-challenge-sergio.netlify.app/)
 
 ## My process
 
