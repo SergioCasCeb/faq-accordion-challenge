@@ -1,4 +1,4 @@
-# Frontend Mentor - Tip calculator app solution
+# Frontend Mentor - FAQ Accordion challenge solution
 
 This is a solution to the [FAQ Accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
